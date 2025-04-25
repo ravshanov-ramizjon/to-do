@@ -167,11 +167,12 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": "postgresql://postgres:ramizjon8002@localhost:5432/nextdbauth?sslmode=disable"
+        "value": null
       }
     }
   },
