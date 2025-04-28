@@ -11,6 +11,7 @@ export default function NewPost() {
     const content = formData.get("content") as string;
 
     await prisma.post.create({
+      
       data: {
         title,
         content,
