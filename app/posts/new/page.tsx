@@ -1,4 +1,4 @@
-import Form from "next/form";
+export const runtime = "nodejs";
 import prisma from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
@@ -28,7 +28,7 @@ export default function NewPost() {
         <h1 className="text-3xl font-extrabold text-gray-900 text-center mb-8 font-[family-name:var(--font-geist-sans)]">
           Create a New Post
         </h1>
-        <Form action={createPost} className="space-y-6">
+        <form action={createPost} className="space-y-6">
           <div>
             <label
               htmlFor="title"
@@ -65,7 +65,7 @@ export default function NewPost() {
           >
             Create Post
           </button>
-        </Form>
+        </form>
       </div>
     </div>
   );

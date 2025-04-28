@@ -1,3 +1,4 @@
+export const runtime = "nodejs";
 import { getServerSession } from "next-auth";
 import { GET as handler } from "../api/auth/[...nextauth]/route"; 
 import ErrorAuth from "@/components/ErrorAuth";
